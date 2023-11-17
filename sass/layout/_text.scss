@@ -4,14 +4,20 @@
   .section-description {
     margin-block: 8px 90px;
   }
-
-  .p + .p {
+  .p + .p,
+  p + p {
     margin-top: 35px;
   }
 
-  .p {
+  .p,
+  .content {
     max-width: 1110px;
     margin-inline: auto;
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
   }
 
   &__img {
@@ -25,9 +31,9 @@
   }
 
   &--with-btn {
-     .section-description {
+    .section-description {
       margin-bottom: 50px;
-     }
+    }
 
     .p {
       margin-top: 50px;
