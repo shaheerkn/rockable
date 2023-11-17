@@ -2,6 +2,10 @@
   padding-block: 117px 0;
   color: var(--color-black);
 
+  @media (max-width: 1440px) {
+   padding-block: 93px 0;
+  }
+
   .tagline {
     margin-bottom: 20px;
   }
@@ -16,9 +20,25 @@
 
   .site-brand {
     margin-bottom: 145px;
+
+    @media (max-width: 1440px) {
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 73px;
+    }
   }
 
   &__content {
     margin-block: 103px;
+
+    @media (max-width: 1024px) {
+      margin-block: 63px;
+
+      h1 + p {
+        margin-bottom: 0;
+      }
+    }
   }
 }

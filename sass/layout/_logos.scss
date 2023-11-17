@@ -7,6 +7,11 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 63px;
+
+    @media (max-width: 1024px) {
+      padding-block: 100px;
+      gap: 70px;
+    }
   }
 
   &__logo {
@@ -15,9 +20,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+     height: auto;
+    }
+
+    img {
+      transition: 0.2s;
+      max-width: 100%;
+    }
+
+    img:hover {
+      filter: drop-shadow(2px 4px 6px black);
+    }
   }
 
   .flex-break {
     border: 1px solid transparent;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
