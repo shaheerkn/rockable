@@ -1,0 +1,23 @@
+.logos {
+  color: var(--color-black);
+  
+  .container {
+    padding-block: 218px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 63px;
+  }
+
+  &__logo {
+    flex-basis: 410px;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-break {
+    border: 1px solid transparent;
+  }
+}

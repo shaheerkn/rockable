@@ -1,0 +1,40 @@
+.text {
+  margin-block: 130px;
+
+  .section-description {
+    margin-block: 8px 90px;
+  }
+
+  .p + .p {
+    margin-top: 35px;
+  }
+
+  .p {
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+
+  &__img {
+    margin-bottom: 60px;
+    max-width: 190px;
+    margin-inline: auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &--with-btn {
+     .section-description {
+      margin-bottom: 50px;
+     }
+
+    .p {
+      margin-top: 50px;
+    }
+  }
+
+  &:not(.button--sticky) .sticky-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.hero {
+  padding-block: 117px 0;
+  color: var(--color-black);
+
+  .tagline {
+    margin-bottom: 20px;
+  }
+
+  h1 + p {
+    width: 100%;
+    max-width: 844px;
+    margin-inline: auto;
+    margin-top: 33px;
+    margin-bottom: 103px;
+  }
+
+  .site-brand {
+    margin-bottom: 145px;
+  }
+
+  &__content {
+    margin-block: 103px;
+  }
+}

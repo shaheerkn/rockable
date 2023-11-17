@@ -1,0 +1,79 @@
+.cards {
+  margin-bottom: 130px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 82px;
+    justify-content: center;
+  }
+
+  &__card {
+    padding-inline: 100px;
+    flex-basis: 33%;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24px;
+      height: 100%;
+      background-image: url('https://i.ibb.co/xscfgGB/right-line.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3),
+    &:nth-child(5) {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      flex-basis: 40%;
+    }
+
+    &:nth-child(6) {
+      flex-basis: 63%;
+      padding-top: 60px;
+
+      &::after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-position: center center;
+        height: 24px;
+        background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
+        background-size: contain;
+      }
+    }
+
+    .section-description {
+      margin-bottom: 70px;
+    }
+
+    p + p {
+      margin-top: 20px;
+    }
+
+    .p {
+      font-size: 19px;
+    }
+  }
+
+  &--simple-borders &__card {
+    padding-inline: 95px;
+
+    &::after {
+      background-image: none;
+      background: var(--primary-color);
+      width: 2px;
+    }
+  }
+}
