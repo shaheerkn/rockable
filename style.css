@@ -77,9 +77,12 @@ body.active .to-light-mode {
 	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+	background-color: var(--primary-color);
 }
 
 .h1 {
@@ -128,6 +131,12 @@ body.active .to-light-mode {
 	transition: background-color 1s;
 }
 
+@media (max-width: 1024px) {
+	.divider {
+		max-width: 216px;
+	}
+}
+
 .section-title {
 	font-size: 50px;
 	font-weight: 600;
@@ -159,8 +168,20 @@ body.active .to-light-mode {
 	outline: none;
 	z-index: 2;
 	cursor: pointer;
-	height: 30px;
+	height: 53px;
 	width: 60px;
+	user-select: none;
+}
+
+@media (max-width: 768px) {
+	.switch-theme {
+		top: 11px;
+		right: 11px;
+	}
+}
+
+.switch-theme img {
+	user-select: none;
 }
 
 body.active .cards:not(.cards--simple-borders) .cards__card::after {
@@ -199,6 +220,12 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	left: 50%;
 	bottom: 50px;
 	position: fixed;
+}
+
+@media (max-width: 1024px) {
+	.btn {
+		padding-inline: 5px;
+	}
 }
 
 .actual-position {
@@ -327,7 +354,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .popup .contact-form .gform_body {
-	margin-top: 50px;
+	margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+	.popup .contact-form .gform_body {
+		max-width: 50px;
+	}
 }
 
 .popup .contact-form .input, .popup .contact-form input, .popup .contact-form .textarea {
@@ -341,6 +374,10 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 
 .popup .contact-form .input::placeholder, .popup .contact-form input::placeholder, .popup .contact-form .textarea::placeholder {
 	color: var(--color-black);
+}
+
+.popup .contact-form .input:focus-visible, .popup .contact-form input:focus-visible, .popup .contact-form .textarea:focus-visible {
+	outline: none;
 }
 
 @media (max-width: 768px) {
