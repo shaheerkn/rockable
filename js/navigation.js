@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let openPopup = document.querySelectorAll('.open-popup');
   let popup = document.querySelector('.popup');
   let popupBg =  popup.querySelector('.popup-bg');
+  let closeBtn =  popup.querySelector('.contact-form__close');
 
   if (openPopup.length && popup) {
     openPopup.forEach((btn)=> {
@@ -33,6 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.classList.toggle('show')
   
         popupBg.addEventListener('click', ()=> {
+           popup.classList.remove('show')
+        })
+
+        closeBtn.addEventListener('click', ()=> {
            popup.classList.remove('show')
         })
       })

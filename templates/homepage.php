@@ -114,13 +114,13 @@ the_post();
         <h5 class="section-description">The year it all began.</h5>
         <p class="p">Humbly, in a basement.</p>
       </div>
-  
+
       <div class="cards__card">
         <h2 class="section-title">3,000+</h2>
         <h5 class="section-description">Amazing clients, worldwide.</h5>
         <p class="p">Great relationships all over the world.</p>
       </div>
-  
+
        <div class="cards__card">
         <h2 class="section-title">1</h2>
         <h5 class="section-description">The number that matters.</h5>
@@ -175,7 +175,7 @@ the_post();
         <p class="p">This is where we learn your challenges, history, culture, and exectations,</p>
         <p class="p">If you're up for a 10-minute call, shoot us a message using the "CONTACT OUR TEAM" button below."</p>
       </div>
-  
+
        <div class="cards__card">
         <h2 class="section-title">Project lunch</h2>
         <h5 class="section-description">Promise, we  won't bite.</h5>

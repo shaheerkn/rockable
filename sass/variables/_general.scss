@@ -58,20 +58,35 @@ body.active .to-light-mode {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: var(--primary-color);
 }
 
 .h1 {
   font-size: 86px;
   font-weight: bold;
+
+  @media (max-width: 1120px) {
+    font-size: 46px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
+  }
 }
 
 .p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 .relative {
@@ -89,16 +104,28 @@ body.active .to-light-mode {
   background-color: var(--primary-color);
   margin-inline: auto;
   transition: background-color 1s;
+
+  @media (max-width: 1024px) {
+    max-width: 216px;
+  }
 }
 
 .section-title {
   font-size: 50px;
   font-weight: 600;
+
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
 }
 
 .section-description {
   font-size: 30px;
   font-weight: 300;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
 }
 
 .switch-theme {
@@ -110,8 +137,18 @@ body.active .to-light-mode {
   outline: none;
   z-index: 2;
   cursor: pointer;
-  height: 30px;
+  height: 53px;
   width: 60px;
+  user-select: none;
+
+  @media (max-width: 768px) {
+    top: 11px;
+    right: 11px;
+  }
+
+  img {
+    user-select: none;
+  }
 }
 
 body.active .cards:not(.cards--simple-borders) .cards__card {
@@ -130,7 +167,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 25px;
-  background-color: #000;
+  background-color: var(--color-black);
   display: inline-block;
   padding: 22px 40px;
   border-radius: 10px;
@@ -138,6 +175,12 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
 
   &.button--sticky {
     position: static;
+    text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+      max-width: 340px;
+      width: 100%;
+    }
   }
 
   &.button--active {
@@ -146,6 +189,10 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     bottom: 50px;
     position: fixed;
   }
+
+    @media (max-width: 1024px) {
+      padding-inline: 5px;
+    }
 }
 
 .actual-position {
@@ -180,13 +227,167 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   .contact-form {
     box-shadow: 0px 33px 86px #0000006A;
     border-radius: 10px;
+    width: calc(100% - 40px);
     max-width: 985px;
     height: 90vh;
-    width: 100%;
     background-color: var(--primary-color);
     z-index: 4;
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
+    text-align: center;
+    padding-block: 14.5vh;
+
+    @media (max-width: 1024px) {
+      padding: 78px 32px 34px;
+    }
+
+    &__close {
+      position: absolute;
+      top: 36px;
+      right: 40px;
+      height: 3px;
+      width: 36px;
+      background: var(--color-black);
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        top: 27px;
+        right: 22px;
+      }
+    }
+
+    &__container {
+      max-width: 758px;
+      width: 100%;
+      margin-inline: auto;
+      overflow: auto;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__p {
+      font-size: 18px;
+      max-width: 604px;
+      margin-bottom: 30px;
+      margin-inline: auto;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+    }
+
+    &__btn {
+      max-width: 357px;
+      width: 100%;
+      background-color: var(--color-black);
+      color: var(--primary-color);
+      font-size: 20px;
+      text-align: center;
+      box-shadow: none;
+      padding-block: 18px;
+      line-height: normal;
+      
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
+    .gform_body {
+      margin-top: 90px;
+
+      @media (max-width: 768px) {
+        max-width: 50px;
+      }
+    }
+
+    .input {
+      border: 2px solid #272727;
+      background-color: transparent;
+      color: var(--color-black);
+      font-size: 20px !important;
+      font-weight: 600;
+      border-radius: 10px;
+
+      &::placeholder {
+        color: var(--color-black);
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 18px !important;
+      }
+    }
+
+    input {
+      @extend .input;
+      opacity: 1;
+      text-align: center;
+      height: 60px;
+    }
+
+    .gfield.gfield--width-half {
+      max-width: 357px;
+      width: 100%;
+      padding-right: 0 !important;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
+    #input_1_1_3_container {
+      padding-right: 0;
+    }
+
+    .gform_wrapper.gravity-theme .gform_fields {
+      grid-column-gap: 6%;
+      grid-row-gap: 30px;
+
+      @media (max-width: 768px) {
+        grid-row-gap: 10px;
+      }
+    }
+
+    #gform_submit_button_1 {
+      @extend .contact-form__btn;
+      margin-inline: auto;
+      cursor: pointer;
+    }
+
+    .textarea {
+     @extend .input;
+      padding: 27px;
+      height: 117px !important;
+      font-family: inherit;
+      
+      @media (max-width: 768px) {
+        text-align: center;
+        padding: 18px;
+      }
+    }
+
+    .ginput_counter {
+      display: none;
+    }
   }
 
   &.show {

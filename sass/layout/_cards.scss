@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     row-gap: 82px;
     justify-content: center;
+
+    @media (max-width: 1120px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -14,6 +18,12 @@
     flex-basis: 33%;
     text-align: center;
     position: relative;
+
+    @media (max-width: 1120px) {
+      flex-basis: 100%;
+      padding-top: 80px;
+      padding-inline: 0;
+    }
 
     &::after {
       content: "";
@@ -25,12 +35,26 @@
       background-image: url('https://i.ibb.co/xscfgGB/right-line.png');
       background-size: cover;
       background-repeat: no-repeat;
+      background-size: 23px 100%;
+
+      @media (max-width: 1120px) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 23px;
+        width: 100% !important;
+        background-size: 255px 20px;
+        background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
+        background-position: center center;
+      }
     }
 
-    &:nth-child(3),
-    &:nth-child(5) {
-      &::after {
-        display: none;
+    @media (min-width: 1120px) {
+      &:nth-child(3),
+      &:nth-child(5) {
+        &::after {
+          display: none;
+        }
       }
     }
 
@@ -39,19 +63,21 @@
       flex-basis: 40%;
     }
 
-    &:nth-child(6) {
-      flex-basis: 63%;
-      padding-top: 60px;
-
-      &::after {
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-position: center center;
-        height: 24px;
-        background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
-        background-size: contain;
-      }
+    @media (min-width: 1120px) {
+      &:nth-child(6) {
+        flex-basis: 63%;
+        padding-top: 60px;
+  
+        &::after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-position: center center;
+          height: 24px;
+          background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
+          background-size: contain;
+        }
+      } 
     }
 
     .section-description {
@@ -64,6 +90,8 @@
 
     .p {
       font-size: 19px;
+      font-weight: 400;
+      line-height: 1.7;
     }
   }
 
@@ -74,6 +102,14 @@
       background-image: none;
       background: var(--primary-color);
       width: 2px;
+    }
+
+    @media (max-width: 1120px) {
+      padding-inline: 20px;
+    
+      &:after {
+        height: 3px;
+      }
     }
   }
 }
