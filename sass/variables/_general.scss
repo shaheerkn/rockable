@@ -322,7 +322,8 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       margin-top: 90px;
 
       @media (max-width: 768px) {
-        max-width: 50px;
+        margin-top: 50px;
+        max-width: 100%;
       }
     }
 
