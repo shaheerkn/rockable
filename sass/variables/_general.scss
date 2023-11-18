@@ -136,8 +136,8 @@ body.active {
 
 .switch-theme {
   position: absolute;
-  top: 50px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   outline: none;
@@ -440,8 +440,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   }
 }
 
-body.active {
-  .cards--simple-borders.cards .cards__card::after {
-    background-image: url("https://i.ibb.co/XxfxK9p/divider-blue.png") !important;
+
+  body.active {
+    .cards--simple-borders.cards .cards__card::after {
+      background-image: url("https://i.ibb.co/bRNLYRy/divider-blue.png");
+
+      @media (max-width: 1120px) {
+        background-image: url("https://i.ibb.co/XxfxK9p/divider-blue.png") !important;
+      }
+    }
   }
-}
