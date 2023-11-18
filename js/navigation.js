@@ -22,27 +22,31 @@ document.addEventListener('DOMContentLoaded', function () {
       buttonSticky.classList.remove('button--active')
     }
   })
-
-  let openPopup = document.querySelectorAll('.open-popup');
-  let popup = document.querySelector('.popup');
-  let popupBg =  popup.querySelector('.popup-bg');
-  let closeBtn =  popup.querySelector('.contact-form__close');
-
-  if (openPopup.length && popup) {
-    openPopup.forEach((btn)=> {
-      btn.addEventListener('click', ()=> {
-        popup.classList.toggle('show')
-  
-        popupBg.addEventListener('click', ()=> {
-           popup.classList.remove('show')
-        })
-
-        closeBtn.addEventListener('click', ()=> {
-           popup.classList.remove('show')
-        })
-      })
-  
-    })
-  }
-  }
+}
 })
+
+let openPopup = document.querySelectorAll('.open-popup');
+let popup = document.querySelector('.popup');
+let popupBg =  popup.querySelector('.popup-bg');
+let closeBtn =  popup.querySelector('.contact-form__close');
+
+if (openPopup && popup ) {
+  function togglePopup() {
+    popup.classList.toggle('show');
+    sessionStorage.setItem('popupShown', popup.classList.contains('show'));
+  }
+  
+  if (sessionStorage.getItem('popupShown') === 'true') {
+    popup.classList.add('show');
+  }
+  
+  if (openPopup.length && popup) {
+    openPopup.forEach((btn) => {
+      btn.addEventListener('click', togglePopup);
+    });
+  
+    popupBg.addEventListener('click', togglePopup);
+  
+    closeBtn.addEventListener('click', togglePopup);
+  }
+}

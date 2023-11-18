@@ -181,3 +181,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_action('gform_confirmation', 'custom_confirmation', 10, 4);
+function custom_confirmation($confirmation, $form, $entry, $ajax) {
+	if ($form['id'] == 1) {
+			add_action('wp_footer', 'custom_confirmation_script');
+	}
+
+	return $confirmation;
+}
+
+function custom_confirmation_script() {
+  ?>
+    <script type="text/javascript">
+			let p = document.querySelector('.contact-form__p');
+			let btns = document.querySelector('.contact-form__btns');
+
+			p.style.display = "none"
+			btns.style.display = "none"
+    </script>
+  <?php
+}
