@@ -10,7 +10,7 @@
 
     @media (max-width: 1024px) {
       padding-block: 100px;
-      gap: 70px;
+      // gap: 70px;
     }
   }
 
@@ -21,9 +21,9 @@
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 1024px) {
-     height: auto;
-    }
+    // @media (max-width: 1024px) {
+    //  height: auto;
+    // }
 
     img {
       transition: 0.2s;
