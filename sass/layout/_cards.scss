@@ -23,6 +23,7 @@
       flex-basis: 100%;
       padding-top: 80px;
       padding-inline: 0;
+      width: 100%;
     }
 
     &::after {
@@ -41,9 +42,9 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        height: 23px;
+        height: 24px;
         width: 100% !important;
-        background-size: 255px 20px;
+        background-size: 255px 24px;
         background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
         background-position: center center;
       }
@@ -99,16 +100,18 @@
     padding-inline: 95px;
 
     &::after {
-      background-image: none;
-      background: var(--primary-color);
-      width: 2px;
+      background-image: url('https://i.ibb.co/JnNg13T/divider.pngg');
+      width: 5px;
+      background-size: cover;
     }
 
     @media (max-width: 1120px) {
       padding-inline: 20px;
-    
+      
       &:after {
-        height: 3px;
+        background-image: url('https://i.ibb.co/wgR1n9N/divider.png');
+        height: 5px;
+        background-size: 268px 5px;
       }
     }
   }

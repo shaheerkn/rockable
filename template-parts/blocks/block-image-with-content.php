@@ -41,10 +41,10 @@ if (get_sub_field('enable_button') == 'Yes'){
       <div class="contact-form__close"></div>
       <div class="contact-form__container">
         <p class="contact-form__p">We’d love to hear about your project and how we may be a great fit. Feel free to complete the form below, shoot us an e-mail, or give us a jingle.</p>
-        <di class="contact-form__btns">
+        <div class="contact-form__btns">
           <a href="tel:(612) 845-0467" class="contact-form__btn btn">(612) 845-0467</a>
           <a href="mailto:talktome@rockabledesign.com" class="contact-form__btn btn">talktome@rockabledesign.com</a>
-        </di>
+        </div>
         <?php echo do_shortcode('[gravityform id="1" title="false"]'); ?>
       </div>
     </div>
