@@ -415,13 +415,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	}
 }
 
-.popup .contact-form #gform_fields_1 {
+.popup .contact-form .gform_wrapper .gform_fields {
 	grid-column-gap: 6% !important;
 	grid-row-gap: 30px !important;
 }
 
 @media (max-width: 768px) {
-	.popup .contact-form #gform_fields_1 {
+	.popup .contact-form .gform_wrapper .gform_fields {
 		grid-row-gap: 10px !important;
 	}
 }

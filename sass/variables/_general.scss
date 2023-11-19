@@ -369,7 +369,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     //   padding-right: 0 !important;
     // }
 
-    #gform_fields_1 {
+    .gform_wrapper .gform_fields {
       grid-column-gap: 6% !important;
       grid-row-gap: 30px !important;
 
