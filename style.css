@@ -15,7 +15,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-Northlife Church is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Rockable is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 */
@@ -375,12 +375,12 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .popup .contact-form .input, .popup .contact-form input, .popup .contact-form .textarea {
-	border: 2px solid #272727;
-	background-color: transparent;
-	color: var(--color-black);
+	border: 2px solid #272727 !important;
+	background-color: transparent !important;
+	color: var(--color-black) !important;
 	font-size: 20px !important;
-	font-weight: 600;
-	border-radius: 10px;
+	font-weight: 600 !important;
+	border-radius: 10px !important;
 }
 
 .popup .contact-form .input::placeholder, .popup .contact-form input::placeholder, .popup .contact-form .textarea::placeholder {
@@ -388,7 +388,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .popup .contact-form .input:focus-visible, .popup .contact-form input:focus-visible, .popup .contact-form .textarea:focus-visible {
-	outline: none;
+	outline: none !important;
 }
 
 @media (max-width: 768px) {
@@ -400,7 +400,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 .popup .contact-form input {
 	opacity: 1;
 	text-align: center;
-	height: 60px;
+	height: 60px !important;
 }
 
 .popup .contact-form .gfield.gfield--width-half {
@@ -436,7 +436,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .popup .contact-form .textarea {
-	padding: 27px;
+	padding: 27px !important;
 	height: 117px !important;
 	font-family: inherit;
 }

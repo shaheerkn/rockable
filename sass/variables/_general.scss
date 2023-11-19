@@ -328,19 +328,19 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     }
 
     .input {
-      border: 2px solid #272727;
-      background-color: transparent;
-      color: var(--color-black);
+      border: 2px solid #272727 !important;
+      background-color: transparent !important;
+      color: var(--color-black) !important;
       font-size: 20px !important;
-      font-weight: 600;
-      border-radius: 10px;
+      font-weight: 600 !important;
+      border-radius: 10px !important;
 
       &::placeholder {
         color: var(--color-black);
       }
 
       &:focus-visible {
-        outline: none;
+        outline: none !important;
       }
 
       @media (max-width: 768px) {
@@ -352,7 +352,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       @extend .input;
       opacity: 1;
       text-align: center;
-      height: 60px;
+      height: 60px !important;
     }
 
     .gfield.gfield--width-half {
@@ -386,7 +386,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
 
     .textarea {
      @extend .input;
-      padding: 27px;
+      padding: 27px !important;
       height: 117px !important;
       font-family: inherit;
       
