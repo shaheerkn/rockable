@@ -10,12 +10,16 @@ body {
   --primary-color: #F8534C;
   --color-black: #272727;
 
+  background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-red.png');
+  background-color: var(--primary-color);
   font-family: 'Lato', sans-serif;
   color: var(--color-black);
+  transition: 1s;
 }
 
 body.active {
   --primary-color: #518478;
+  background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
 }
 
 .bg-el--blue {
@@ -200,9 +204,9 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     position: fixed;
   }
 
-    @media (max-width: 1024px) {
-      padding-inline: 5px;
-    }
+  @media (max-width: 1024px) {
+    padding-inline: 5px;
+  }
 }
 
 .actual-position {
@@ -223,7 +227,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   transform: scale(0);
   z-index: -1;
   transition: transform 0.3s;
-  
+
   .popup-bg {
     width: 100%;
     height: 100%;
@@ -233,7 +237,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-  
+
   .contact-form {
     box-shadow: 0px 33px 86px #0000006A;
     border-radius: 10px;
@@ -241,11 +245,15 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     max-width: 985px;
     height: 90vh;
     background-color: var(--primary-color);
+    background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-red.png');
     z-index: 4;
     position: relative;
     overflow: hidden;
     text-align: center;
-    padding-block: 14.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
 
     @media (max-width: 1024px) {
       padding: 78px 32px 34px;
@@ -253,12 +261,22 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
 
     &__close {
       position: absolute;
-      top: 36px;
-      right: 40px;
-      height: 3px;
-      width: 36px;
-      background: var(--color-black);
+      top: 16px;
+      right: 15px;
       cursor: pointer;
+      height: 50px;
+      width: 50px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        width: 36px;
+        background: var(--color-black);
+      }
 
       @media (max-width: 768px) {
         top: 27px;
@@ -271,10 +289,14 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       width: 100%;
       margin-inline: auto;
       overflow: auto;
-      height: 100%;
+      height: auto;
 
       &::-webkit-scrollbar {
         display: none;
+      }
+
+      @media (max-height: 958px) {
+       height: 100%;
       }
     }
 
@@ -442,13 +464,15 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   }
 }
 
+body.active {
+  .contact-form {
+    background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
+  }
+  .cards--simple-borders.cards .cards__card::after {
+    background-image: url("https://i.ibb.co/bRNLYRy/divider-blue.png");
 
-  body.active {
-    .cards--simple-borders.cards .cards__card::after {
-      background-image: url("https://i.ibb.co/bRNLYRy/divider-blue.png");
-
-      @media (max-width: 1120px) {
-        background-image: url("https://i.ibb.co/XxfxK9p/divider-blue.png") !important;
-      }
+    @media (max-width: 1120px) {
+      background-image: url("https://i.ibb.co/XxfxK9p/divider-blue.png") !important;
     }
   }
+}

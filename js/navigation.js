@@ -12,14 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
   let innerHeight = window.innerHeight - 130;
 
+  
   if (actualPosition && buttonSticky) {
+  buttonSticky.classList.add('button--active');
+
   window.addEventListener('scroll', ()=> {
     if (actualPosition.getBoundingClientRect().y < innerHeight) {
       buttonSticky.classList.remove('button--active')
-    } else if (window.scrollY > 100) {
-      buttonSticky.classList.add('button--active')
     } else {
-      buttonSticky.classList.remove('button--active')
+      buttonSticky.classList.add('button--active')
     }
   })
 }
@@ -31,7 +32,8 @@ let popupBg =  popup.querySelector('.popup-bg');
 let closeBtn =  popup.querySelector('.contact-form__close');
 
 if (openPopup && popup ) {
-  function togglePopup() {
+  function togglePopup(e) {
+    e.preventDefault();
     popup.classList.toggle('show');
     sessionStorage.setItem('popupShown', popup.classList.contains('show'));
   }

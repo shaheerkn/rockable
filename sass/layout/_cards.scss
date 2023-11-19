@@ -18,6 +18,8 @@
     flex-basis: 33%;
     text-align: center;
     position: relative;
+    padding: 70px 40px;
+    max-width: 480px;
 
     @media (max-width: 1120px) {
       flex-basis: 100%;
@@ -62,6 +64,7 @@
     &:nth-child(4),
     &:nth-child(5) {
       flex-basis: 40%;
+      max-width: 628px;
     }
 
     @media (min-width: 1120px) {
@@ -97,7 +100,8 @@
   }
 
   &--simple-borders &__card {
-    padding-inline: 95px;
+    padding: 70px 20px;
+    max-width: 480px;
 
     &::after {
       background-image: url('https://i.ibb.co/JnNg13T/divider.pngg');
