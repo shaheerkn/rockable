@@ -415,17 +415,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	}
 }
 
-.popup .contact-form #input_1_1_3_container {
-	padding-right: 0 !important;
-}
-
-.popup .contact-form .gform_wrapper.gravity-theme .gform_fields {
+.popup .contact-form #gform_fields_1 {
 	grid-column-gap: 6% !important;
 	grid-row-gap: 30px !important;
 }
 
 @media (max-width: 768px) {
-	.popup .contact-form .gform_wrapper.gravity-theme .gform_fields {
+	.popup .contact-form #gform_fields_1 {
 		grid-row-gap: 10px !important;
 	}
 }
@@ -439,6 +435,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	padding: 27px !important;
 	height: 117px !important;
 	font-family: inherit !important;
+	min-block-size: auto !important;
 }
 
 @media (max-width: 768px) {

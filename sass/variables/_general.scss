@@ -365,11 +365,11 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       }
     }
 
-    #input_1_1_3_container {
-      padding-right: 0 !important;
-    }
+    // #input_1_1_3_container {
+    //   padding-right: 0 !important;
+    // }
 
-    .gform_wrapper.gravity-theme .gform_fields {
+    #gform_fields_1 {
       grid-column-gap: 6% !important;
       grid-row-gap: 30px !important;
 
@@ -389,6 +389,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       padding: 27px !important;
       height: 117px !important;
       font-family: inherit !important;
+      min-block-size: auto !important;
       
       @media (max-width: 768px) {
         text-align: center !important;
