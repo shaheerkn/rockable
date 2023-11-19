@@ -350,8 +350,8 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
 
     input {
       @extend .input;
-      opacity: 1;
-      text-align: center;
+      opacity: 1 !important;
+      text-align: center !important;
       height: 60px !important;
     }
 
@@ -388,10 +388,10 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
      @extend .input;
       padding: 27px !important;
       height: 117px !important;
-      font-family: inherit;
+      font-family: inherit !important;
       
       @media (max-width: 768px) {
-        text-align: center;
+        text-align: center !important;
         padding: 18px !important;
       }
     }
