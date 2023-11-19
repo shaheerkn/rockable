@@ -27,7 +27,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 :root {
-	--secondary-bg: ur('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
+	--secondary-bg: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
 }
 
 body {
