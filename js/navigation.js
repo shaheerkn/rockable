@@ -2,10 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
   let themeBtnEl = document.querySelector('.switch-theme');
   let body = document.querySelector('body');
 
-  themeBtnEl.addEventListener('click', ()=> {
-    body.classList.toggle('active')
-    themeBtnEl.classList.toggle('active')
-  })
+  const savedTheme = sessionStorage.getItem('theme');
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+    themeBtnEl.classList.add('active');
+  }
+
+  themeBtnEl.addEventListener('click', () => {
+    body.classList.toggle('active');
+    themeBtnEl.classList.toggle('active');
+    const theme = body.classList.contains('active') ? 'active' : '';
+    sessionStorage.setItem('theme', theme);
+  });
 
   let actualPosition = document.querySelector('.text--with-btn .actual-position');
   let buttonSticky = document.querySelector('.text--with-btn .button--sticky');

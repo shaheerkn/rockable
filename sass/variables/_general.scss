@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+:root {
+  --secondary-bg: ur('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
+}
+
 body {
   --primary-color: #F8534C;
   --color-black: #272727;
@@ -19,7 +23,7 @@ body {
 
 body.active {
   --primary-color: #518478;
-  background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
+  background-image: var(--secondary-bg);
 }
 
 .bg-el--blue {
