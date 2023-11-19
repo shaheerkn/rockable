@@ -374,11 +374,14 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       }
     }
 
-    input {
+    input,
+    select {
       @extend .input;
       opacity: 1 !important;
       text-align: center !important;
       height: 60px !important;
+      -webkit-appearance: none;
+      appearance: none;
     }
 
     .gfield.gfield--width-half {
@@ -460,6 +463,12 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     .gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
       border-width: 2px;
     }
+
+    .gfield--type-select label {
+      display: none;
+    }
+
+    
   }
 
   &.show {

@@ -402,7 +402,8 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	}
 }
 
-.popup .contact-form .input, .popup .contact-form input, .popup .contact-form .textarea {
+.popup .contact-form .input, .popup .contact-form input,
+.popup .contact-form select, .popup .contact-form .textarea {
 	border: 2px solid #272727 !important;
 	background-color: transparent !important;
 	color: var(--color-black) !important;
@@ -411,24 +412,30 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	border-radius: 10px !important;
 }
 
-.popup .contact-form .input::placeholder, .popup .contact-form input::placeholder, .popup .contact-form .textarea::placeholder {
+.popup .contact-form .input::placeholder, .popup .contact-form input::placeholder,
+.popup .contact-form select::placeholder, .popup .contact-form .textarea::placeholder {
 	color: var(--color-black);
 }
 
-.popup .contact-form .input:focus-visible, .popup .contact-form input:focus-visible, .popup .contact-form .textarea:focus-visible {
+.popup .contact-form .input:focus-visible, .popup .contact-form input:focus-visible,
+.popup .contact-form select:focus-visible, .popup .contact-form .textarea:focus-visible {
 	outline: none !important;
 }
 
 @media (max-width: 768px) {
-	.popup .contact-form .input, .popup .contact-form input, .popup .contact-form .textarea {
+	.popup .contact-form .input, .popup .contact-form input,
+	.popup .contact-form select, .popup .contact-form .textarea {
 		font-size: 18px !important;
 	}
 }
 
-.popup .contact-form input {
+.popup .contact-form input,
+.popup .contact-form select {
 	opacity: 1 !important;
 	text-align: center !important;
 	height: 60px !important;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 .popup .contact-form .gfield.gfield--width-half {
@@ -509,6 +516,10 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 
 .popup .contact-form .gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
 	border-width: 2px;
+}
+
+.popup .contact-form .gfield--type-select label {
+	display: none;
 }
 
 .popup.show {
