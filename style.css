@@ -438,6 +438,11 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	appearance: none;
 }
 
+.popup .contact-form select {
+	display: flex;
+	align-items: center;
+}
+
 .popup .contact-form .gfield.gfield--width-half {
 	max-width: 357px !important;
 	width: 100% !important;
