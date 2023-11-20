@@ -6,15 +6,9 @@
   padding: 0;
 }
 
-:root {
-  --secondary-bg: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
-}
-
 body {
-  --primary-color: #F8534C;
+  --primary-color: #ED4A44;
   --color-black: #272727;
-
-  background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-red.png');
   background-color: var(--primary-color);
   font-family: 'Lato', sans-serif;
   color: var(--color-black);
@@ -22,8 +16,7 @@ body {
 }
 
 body.active {
-  --primary-color: #518478;
-  background-image: var(--secondary-bg);
+  --primary-color: #61A292;
 }
 
 .bg-el--blue {
@@ -93,7 +86,7 @@ body.active .to-light-mode {
   line-height: 1.7;
 
   @media (max-width: 1024px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -251,7 +244,6 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     max-width: 985px;
     height: 90vh;
     background-color: var(--primary-color);
-    background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-red.png');
     z-index: 4;
     position: relative;
     overflow: hidden;
@@ -390,6 +382,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
     select {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
 
     .gfield.gfield--width-half {
@@ -401,10 +394,6 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
         max-width: 100% !important;
       }
     }
-
-    // #input_1_1_3_container {
-    //   padding-right: 0 !important;
-    // }
 
     .gform_wrapper .gform_fields {
       grid-column-gap: 6% !important;
@@ -486,9 +475,6 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
 }
 
 body.active {
-  .contact-form {
-    background-image: url('https://rockabledesign.com/wp-content/uploads/2023/11/background-blue.png');
-  }
   .cards--simple-borders.cards .cards__card::after {
     background-image: url("https://i.ibb.co/bRNLYRy/divider-blue.png");
 
