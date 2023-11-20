@@ -429,6 +429,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 .popup .contact-form select {
 	opacity: 1 !important;
 	text-align: center !important;
+	text-align-last: center !important;
 	height: 60px !important;
 	-webkit-appearance: none;
 	appearance: none;

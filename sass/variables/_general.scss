@@ -374,6 +374,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       @extend .input;
       opacity: 1 !important;
       text-align: center !important;
+      text-align-last: center !important;
       height: 60px !important;
       -webkit-appearance: none;
       appearance: none;
