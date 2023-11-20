@@ -177,6 +177,8 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
   &:nth-child(6) {
     &::after {
       background-image: url("https://i.ibb.co/M7gx5LX/down-arrow-secondary.png");
+      max-width: 440px;
+      width: 100%;
     }
   }
 }
@@ -293,6 +295,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card {
       width: 100%;
       margin-inline: auto;
       overflow: auto;
+      overflow-x: hidden;
       height: auto;
 
       &::-webkit-scrollbar {

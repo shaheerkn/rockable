@@ -32,7 +32,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
+      right: -22px;
       width: 24px;
       height: 100%;
       background-image: url('https://i.ibb.co/xscfgGB/right-line.png');
@@ -71,7 +71,7 @@
       &:nth-child(6) {
         flex-basis: 63%;
         padding-top: 60px;
-  
+        
         &::after {
           top: 0;
           left: 0;
@@ -107,6 +107,7 @@
       background-image: url('https://i.ibb.co/JnNg13T/divider.pngg');
       width: 5px;
       background-size: cover;
+      right: 0;
     }
 
     @media (max-width: 1120px) {
