@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container tcenter">
-				<a href="#" class="brand">
+				<a href="#" class="brand" data-aos="zoom-in">
            <img src="<?php echo get_template_directory_uri()?>/assets/brand-black.svg" />
         </a>
 				<p>

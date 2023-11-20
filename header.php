@@ -29,10 +29,7 @@
 
 	</header><!-- #masthead -->
 
-  <!-- <img src="<?php echo get_template_directory_uri()?>/assets/background-red.png" class="bg-el bg-el--red" fetchPriority="high" />
-  <img src="<?php echo get_template_directory_uri()?>/assets/background-blue.png" class="bg-el bg-el--blue" fetchPriority="high" /> -->
-
-  <button class="switch-theme" aria-label="Change website theme">
-    <img src="<?php echo get_template_directory_uri()?>/assets/glasses.png" class="to-dark-mode" />
+  <button class="switch-theme" aria-label="Change website theme"">
+    <img src="<?php echo get_template_directory_uri()?>/assets/glasses.png" class="to-dark-mode"/>
     <img src="<?php echo get_template_directory_uri()?>/assets/dark-mode.png" class="to-light-mode" />
   </button>
