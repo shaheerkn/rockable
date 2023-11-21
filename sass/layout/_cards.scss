@@ -1,6 +1,12 @@
 .cards {
   margin-bottom: 130px;
 
+  &--simple-borders {
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
   .container {
     display: flex;
     align-items: center;
