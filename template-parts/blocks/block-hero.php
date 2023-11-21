@@ -15,7 +15,9 @@
         <img src="<?php echo get_template_directory_uri() ?>/assets/brand-black.svg" />
       </a> 
     </div>
-    <div class="divider" data-aos="fade-up" data-aos-duration="1000"></div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div class="divider"></div>
+    </div>
     <div class="hero__content"  data-aos="fade-up" data-aos-duration="1000">
       <?php
         theme_the_field( 'title_two', '<h1 class="h1">', '</h1>', true );
