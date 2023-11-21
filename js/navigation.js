@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+  document.documentElement.classList.remove('no-js')
   AOS.init();
 
   let themeBtnEl = document.querySelector('.switch-theme');
