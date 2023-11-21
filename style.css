@@ -30,6 +30,7 @@ body {
 	--primary-color: #ED4A44;
 	--color-black: #272727;
 	background-color: var(--primary-color);
+	overflow-x: hidden;
 	font-family: 'Lato', sans-serif;
 	color: var(--color-black);
 	transition: 1s;
@@ -335,7 +336,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	display: none;
 }
 
-@media (max-height: 958px) {
+@media (max-height: 750px) {
 	.popup .contact-form__container {
 		height: 100%;
 	}
