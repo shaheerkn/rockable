@@ -1,6 +1,6 @@
 .logos {
   color: var(--color-black);
-  
+
   .container {
     padding-block: 183px;
     display: flex;
@@ -12,7 +12,16 @@
       padding-block: 100px;
       // gap: 70px;
     }
+
+    @media (max-width: 1690px) and (min-width: 1000px) {
+      zoom: 80%;
+    }
+
+     @media (max-width: 1355px) and (min-width: 1000px) {
+      zoom: 60%;
+    }
   }
+
 
   &__logo {
     flex-basis: 410px;
