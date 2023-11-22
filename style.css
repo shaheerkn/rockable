@@ -136,7 +136,7 @@ body.active .to-light-mode {
 
 @media (max-width: 1024px) {
 	.divider {
-		max-width: 216px;
+		max-width: 338px;
 	}
 }
 
@@ -197,7 +197,9 @@ body.active .cards:not(.cards--simple-borders) .cards__card::after {
 
 @media (max-width: 1120px) {
 	body.active .cards:not(.cards--simple-borders) .cards__card::after {
-		background-image: url('https://i.ibb.co/r3sx6Gv/arrow-down-mobil-blue.png" alt="arrow-down-mobil-blue');
+		max-width: 338px;
+		background-size: cover;
+		background-image: url("https://rockabledesign.com/wp-content/uploads/2023/11/down-arrow-mobile-blue.svg");
 	}
 }
 
@@ -205,6 +207,15 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	background-image: url("https://i.ibb.co/M7gx5LX/down-arrow-secondary.png");
 	max-width: 440px;
 	width: 100%;
+	background-position: 78%;
+}
+
+@media (max-width: 1120px) {
+	body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after {
+		max-width: 338px;
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 .btn {
@@ -1745,7 +1756,7 @@ body.active .cards--simple-borders.cards .cards__card::after {
 		transform: translateX(-50%);
 		height: 24px;
 		width: 100% !important;
-		background-size: 255px 24px;
+		background-size: 338px 24px;
 		background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
 		background-position: center center;
 	}
@@ -1811,7 +1822,7 @@ body.active .cards--simple-borders.cards .cards__card::after {
 	.cards--simple-borders .cards__card:after {
 		background-image: url("https://i.ibb.co/wgR1n9N/divider.png");
 		height: 5px;
-		background-size: 268px 5px;
+		background-size: 338px 5px;
 	}
 }
 
