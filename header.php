@@ -30,6 +30,6 @@
 	</header><!-- #masthead -->
 
   <button class="switch-theme" aria-label="Change website theme">
-    <img src="<?php echo get_template_directory_uri()?>/assets/glasses.svg" class="to-dark-mode"/>
-    <img src="<?php echo get_template_directory_uri()?>/assets/sun.svg" class="to-light-mode" />
+    <img src="<?php echo get_template_directory_uri()?>/assets/new-glasses.svg" class="to-dark-mode"/>
+    <img src="<?php echo get_template_directory_uri()?>/assets/new-sun.svg" class="to-light-mode" />
   </button>
