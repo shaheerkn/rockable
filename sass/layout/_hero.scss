@@ -1,5 +1,5 @@
 .hero {
-  padding-block: 117px 0;
+  padding-block: 115px 0;
   color: var(--color-black);
 
   @media (max-width: 1440px) {
@@ -8,6 +8,7 @@
 
   .tagline {
     margin-bottom: 20px;
+    line-height: 12px;
   }
 
   h1 + p {
@@ -15,11 +16,10 @@
     max-width: 844px;
     margin-inline: auto;
     margin-top: 33px;
-    // margin-bottom: 103px;
   }
 
   .site-brand {
-    margin-bottom: 270px;
+    margin-bottom: 250px;
 
     @media (max-width: 1440px) {
       margin-bottom: 100px;
