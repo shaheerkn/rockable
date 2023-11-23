@@ -1,13 +1,14 @@
 .text {
-  margin-block: 130px;
+  // margin-block: 130px;
 
-  @media (max-width: 1024px) {
-    margin-block: 75px;
-  }
+  // @media (max-width: 1024px) {
+  //   margin-block: 75px;
+  // }
 
   .section-description {
     margin-block: 8px 90px;
   }
+
   .p + .p,
   p + p {
     margin-top: 35px;
@@ -36,6 +37,9 @@
 
     img {
       max-width: 100%;
+    }
+    &:empty {
+      display: none;
     }
   }
 

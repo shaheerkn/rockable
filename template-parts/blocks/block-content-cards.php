@@ -24,6 +24,5 @@ if (get_sub_field('simple_border') == 'Yes'){
         ?>
       </div>
     <?php endwhile; ?>
-
   </div>
 </section>

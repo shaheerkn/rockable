@@ -20,16 +20,38 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php
+  $primaryColor = get_field( 'primary_color', 'options');
+  $secondaryColor = get_field( 'secondary_color', 'options');
+  $toDarkMode = get_field( 'to_dark_mode', 'options');
+  $toLightMode = get_field( 'to_light_mode', 'options');
+?>
+
+<style>
+	body {
+		--primary-color: <?php echo $primaryColor; ?>;
+		--secondary-color: <?php echo $secondaryColor; ?>;
+	}
+
+	body.active {
+		--primary-color: var(--secondary-color);
+	}
+</style>
+
+<body <?php body_class(); ?> >
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'rockable' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<button class="switch-theme" aria-label="Change website theme">
+			<?php if ( $toDarkMode ) : ?>
+				<img src="<?php echo $toDarkMode ?>" class="to-dark-mode" />
+			<?php	endif; ?>
 
-	</header><!-- #masthead -->
-
-  <button class="switch-theme" aria-label="Change website theme">
-    <img src="<?php echo get_template_directory_uri()?>/assets/new-glasses.svg" class="to-dark-mode"/>
-    <img src="<?php echo get_template_directory_uri()?>/assets/new-sun.svg" class="to-light-mode" />
-  </button>
+			<?php if ( $toLightMode ) : ?>
+				<img src="<?php echo $toLightMode ?>" class="to-light-mode" />
+			<?php	endif; ?>
+		</button>
+	</header>

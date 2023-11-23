@@ -9,13 +9,15 @@ if (get_sub_field('enable_button') == 'Yes'){
 ?>
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> text tcenter text--with-btn">
   <div class="container">
-    <div class="text__img" data-aos="fade-up" data-aos-duration="1000">
-      <?php
-        if (get_sub_field('enable_image') == 'Yes'){
-          theme_get_attachment( get_sub_field('image'), 'full', '', true );
-        }
-      ?>
-    </div>
+    <?php if (get_sub_field('enable_image') == 'Yes'){ ?>
+      <div class="text__img" data-aos="fade-up" data-aos-duration="1000">
+        <?php
+          if (get_sub_field('enable_image') == 'Yes'){
+            theme_get_attachment( get_sub_field('image'), 'full', '', true );
+          }
+        ?>
+      </div>
+    <?php }  ?>
     <?php
       theme_the_field( 'title', '<h2 class="section-title">', '</h2>', true );
       theme_the_field( 'subtitle', '<p class="section-description">', '</p>', true );
