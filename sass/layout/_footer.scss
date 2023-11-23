@@ -1,5 +1,9 @@
 .site-footer {
-  padding-block: 115px 25px;
+  padding-block: 270px 25px;
+
+  @media (max-width: 768px) {
+    padding-top: 115px;
+  }
 
   .container {
     display: flex;

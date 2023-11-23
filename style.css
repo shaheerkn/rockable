@@ -1503,7 +1503,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .hero {
-	padding-block: 122px 0;
+	padding-block: 117px 0;
 	color: var(--color-black);
 }
 
@@ -1773,7 +1773,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .site-footer {
-	padding-block: 115px 25px;
+	padding-block: 270px 25px;
+}
+
+@media (max-width: 768px) {
+	.site-footer {
+		padding-top: 115px;
+	}
 }
 
 .site-footer .container {
