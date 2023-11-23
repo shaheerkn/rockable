@@ -1710,7 +1710,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 0.2px;
+	width: 0.3px;
 	height: 100%;
 	background-color: #272727;
 }
@@ -1720,7 +1720,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		height: 0.2px;
+		height: 0.3px;
 		width: 100% !important;
 		background-position: center center;
 	}
