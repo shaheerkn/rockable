@@ -1728,6 +1728,12 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 	}
 }
 
+@media (max-width: 1123px) {
+	.cards__card:nth-child(1)::after {
+		display: none;
+	}
+}
+
 @media (min-width: 1120px) {
 	.cards__card:nth-child(3)::after, .cards__card:nth-child(5)::after {
 		display: none;
@@ -1760,6 +1766,10 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 .cards__card .p {
 	font-size: 19px;
 	font-weight: 400;
+	line-height: 1.7;
+}
+
+.cards__card .content p {
 	line-height: 1.7;
 }
 

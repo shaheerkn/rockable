@@ -32,7 +32,6 @@
     position: relative;
     padding: 70px 40px;
     max-width: 480px;
-    // border: 1px solid green;
 
     @media (max-width: 1120px) {
       flex-basis: 100%;
@@ -60,6 +59,14 @@
       }
     }
 
+    @media (max-width: 1123px) {
+      &:nth-child(1) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
     @media (min-width: 1120px) {
       &:nth-child(3),
       &:nth-child(5) {
@@ -79,18 +86,11 @@
       &:nth-child(6) {
         flex-basis: 63%;
         padding-top: 60px;
-        
+
         &::after {
           display: none;
-          // top: 0;
-          // left: 0;
-          // width: 100%;
-          // background-position: center center;
-          // height: 24px;
-          // background-image: url("https://i.ibb.co/3F89Rfx/down-arrow.png");
-          // background-size: contain;
         }
-      } 
+      }
     }
 
     .section-description {
@@ -104,6 +104,10 @@
     .p {
       font-size: 19px;
       font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .content p {
       line-height: 1.7;
     }
   }
