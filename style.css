@@ -1527,7 +1527,7 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 }
 
 .hero .site-brand {
-	margin-bottom: 250px;
+	margin-bottom: 220px;
 }
 
 @media (max-width: 1440px) {

@@ -6,7 +6,7 @@
 ?>
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> hero relative">
   <div class="container tcenter">
-    <div class="site-brand" data-aos="zoom-out">
+    <div class="site-brand" data-aos="zoom-out" data-aos-duration="1000">
       <?php
         theme_the_field( 'pre_title', '<p class="p tagline">', '</p>', true );
         theme_the_field( 'title', '<h2 class="h2 brand">', '</h2>', true );
