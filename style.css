@@ -1669,7 +1669,6 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 
 .cards .container {
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
 	row-gap: 82px;
 	justify-content: center;
