@@ -10,7 +10,7 @@ if (get_sub_field('simple_border') == 'Yes'){
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> cards">
   <div class="container container--large">
     <?php while( have_rows( 'cards' ) ) : the_row(); ?>
-      <div class="cards__card">
+      <div class="cards__card"  data-aos="fade-up" data-aos-duration="1000">
         <?php
           theme_the_field( 'title', '<h2 class="section-title">', '</h2>', true );
           theme_the_field( 'subtitle', '<p class="section-description">', '</p>', true );
