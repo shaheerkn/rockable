@@ -1,91 +1,36 @@
 .cards {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 82px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px 52px;
     margin-top: 130px;
 
-    @media (max-width: 1024px) {
-      margin-top: 75px;
+    @media (max-width: 1250px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 1120px) {
-      flex-direction: column;
-      row-gap: 0;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      margin-top: 75px;
     }
   }
 
   &__card {
-    padding-inline: 100px;
-    flex-basis: 33%;
-    text-align: center;
+    background-color: #272727;
+    color: var(--primary-color);
     position: relative;
-    padding: 70px 40px;
-    max-width: 480px;
+    padding: 80px 61px 88px;
+    text-align: center;
+    border-radius: 8px;
+    transition: color 1s;
 
-    @media (max-width: 1120px) {
-      flex-basis: 100%;
-      padding-top: 80px;
-      padding-inline: 0;
-      width: 100%;
+
+    @media (max-width: 1520px) {
+      padding-inline: 25px;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0.3px;
-      height: 100%;
-      background-color: #272727;
-
-      @media (max-width: 1120px) {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 0.3px;
-        width: 100% !important;
-        background-position: center center;
-      }
-    }
-
-    @media (max-width: 1123px) {
-      &:nth-child(1) {
-        &::after {
-          display: none;
-        }
-      }
-    }
-
-    @media (min-width: 1120px) {
-      &:nth-child(3),
-      &:nth-child(5) {
-        &::after {
-          display: none;
-        }
-      }
-    }
-
-    &:nth-child(4),
-    &:nth-child(5) {
-      flex-basis: 40%;
-      max-width: 628px;
-    }
-
-    @media (min-width: 1120px) {
-      &:nth-child(6) {
-        flex-basis: 63%;
-        padding-top: 60px;
-
-        &::after {
-          display: none;
-        }
-      }
-    }
-
-    .section-description {
-      margin-bottom: 70px;
+    .section-title {
+      margin-bottom: 12px;
     }
 
     p + p {
@@ -96,24 +41,21 @@
       font-size: 19px;
       font-weight: 400;
       line-height: 1.7;
+      color: inherit;
+    }
+
+    .content {
+      margin-top: 27px;
     }
 
     .content p {
-      line-height: 1.7;
-      font-size: 18px;
+      line-height: 1.2;
+      font-size: 26px;
+      font-weight: 300;
 
       @media (max-width: 1024px) {
         font-size: 16px;
       }
-    }
-  }
-
-  &--simple-borders &__card {
-    padding: 70px 20px;
-    max-width: 480px;
-  
-    @media (max-width: 1120px) {
-      padding-inline: 20px;
     }
   }
 }

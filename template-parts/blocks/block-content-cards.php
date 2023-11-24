@@ -8,7 +8,7 @@ if (get_sub_field('simple_border') == 'Yes'){
 }
 ?>
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> cards">
-  <div class="container">
+  <div class="container container--large">
     <?php while( have_rows( 'cards' ) ) : the_row(); ?>
       <div class="cards__card">
         <?php
