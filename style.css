@@ -1770,6 +1770,13 @@ body.active .cards:not(.cards--simple-borders) .cards__card:nth-child(6)::after 
 
 .cards__card .content p {
 	line-height: 1.7;
+	font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+	.cards__card .content p {
+		font-size: 16px;
+	}
 }
 
 .cards--simple-borders .cards__card {
