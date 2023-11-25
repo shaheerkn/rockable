@@ -1651,6 +1651,10 @@ body.active .divider {
 	display: none;
 }
 
+.cards {
+	counter-reset: section;
+}
+
 .cards .container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -1687,6 +1691,16 @@ body.active .divider {
 	}
 }
 
+.cards__card::before {
+	counter-increment: section;
+	content: counter(section);
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
 .cards__card .section-title {
 	margin-bottom: 12px;
 }
@@ -1714,8 +1728,12 @@ body.active .divider {
 
 @media (max-width: 1024px) {
 	.cards__card .content p {
-		font-size: 16px;
+		font-size: 20px;
 	}
+}
+
+.cards.cards--simple-borders .cards__card::before {
+	display: none;
 }
 
 .site-footer {

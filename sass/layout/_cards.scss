@@ -1,4 +1,6 @@
 .cards {
+  counter-reset: section;
+
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -24,9 +26,18 @@
     border-radius: 8px;
     transition: color 1s;
 
-
     @media (max-width: 1520px) {
       padding-inline: 25px;
+    }
+
+    &::before {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      font-size: 20px;
+      font-weight: 300;
     }
 
     .section-title {
@@ -54,7 +65,15 @@
       font-weight: 300;
 
       @media (max-width: 1024px) {
-        font-size: 16px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &.cards--simple-borders {
+    .cards__card {
+      &::before {
+        display: none;
       }
     }
   }
