@@ -1557,15 +1557,9 @@ body.active .divider {
 	}
 }
 
-@media (max-width: 1690px) and (min-width: 1000px) {
+@media (max-width: 1300px) and (min-width: 1200px) {
 	.logos .container {
-		zoom: 80%;
-	}
-}
-
-@media (max-width: 1355px) and (min-width: 1000px) {
-	.logos .container {
-		zoom: 60%;
+		zoom: 65%;
 	}
 }
 
@@ -1575,6 +1569,12 @@ body.active .divider {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media (max-width: 1690px) and (min-width: 1300px) {
+	.logos__logo {
+		flex-basis: 25%;
+	}
 }
 
 .logos__logo img {
