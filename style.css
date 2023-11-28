@@ -173,7 +173,7 @@ body.active .divider {
 	background: none;
 	border: none;
 	outline: none;
-	z-index: 2;
+	z-index: 20;
 	cursor: pointer;
 	height: 53px;
 	width: 60px;
