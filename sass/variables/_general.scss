@@ -352,10 +352,6 @@ body.active {
     }
   }
 
-  .ginput_counter {
-    display: none;
-  }
-
   &.thankyou {
     h2 {
       font-size: 108px;
@@ -375,8 +371,9 @@ body.active {
     display: none;
   }
 
-  .gform_validation_errors {
-    display: none;
+  .gform_validation_errors,
+  .ginput_counter {
+    display: none !important;
   }
 
   .validation_message {
@@ -388,10 +385,6 @@ body.active {
 
   .gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
     border-width: 2px;
-  }
-
-  .gfield--type-select label {
-    display: none;
   }
 }
 

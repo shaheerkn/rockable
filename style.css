@@ -408,10 +408,6 @@ body.active .divider {
 	}
 }
 
-.contact-form .ginput_counter {
-	display: none;
-}
-
 .contact-form.thankyou h2 {
 	font-size: 108px;
 	line-height: 1.2;
@@ -431,8 +427,9 @@ body.active .divider {
 	display: none;
 }
 
-.contact-form .gform_validation_errors {
-	display: none;
+.contact-form .gform_validation_errors,
+.contact-form .ginput_counter {
+	display: none !important;
 }
 
 .contact-form .validation_message {
@@ -444,10 +441,6 @@ body.active .divider {
 
 .contact-form .gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
 	border-width: 2px;
-}
-
-.contact-form .gfield--type-select label {
-	display: none;
 }
 
 .contact-form-section .h1 {
