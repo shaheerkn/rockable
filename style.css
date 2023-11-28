@@ -423,6 +423,16 @@ body.active .divider {
 	font-size: 18px;
 }
 
+.contact-form.thankyou img {
+	max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+	.contact-form.thankyou {
+		padding-top: 0;
+	}
+}
+
 .contact-form #gform_ajax_spinner_1 {
 	display: none;
 }

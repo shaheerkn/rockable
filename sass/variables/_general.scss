@@ -365,6 +365,14 @@ body.active {
     p {
       font-size: 18px;
     }
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      padding-top: 0;
+    }
   }
 
   #gform_ajax_spinner_1 {
