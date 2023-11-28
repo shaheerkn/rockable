@@ -35,6 +35,10 @@ body {
 	transition: 1s;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .bg-el--blue {
 	opacity: 0;
 	transition: 1s;
@@ -123,25 +127,6 @@ body.active .to-light-mode {
 
 .tcenter {
 	text-align: center;
-}
-
-.divider {
-	width: 100%;
-	max-width: 710px;
-	height: 5px;
-	background-image: url("https://i.ibb.co/wgR1n9N/divider.png");
-	margin-inline: auto;
-	transition: background-image 1s;
-}
-
-@media (max-width: 1024px) {
-	.divider {
-		max-width: 338px;
-	}
-}
-
-body.active .divider {
-	background-image: url("https://i.ibb.co/XxfxK9p/divider-blue.png");
 }
 
 .section-title {
@@ -456,6 +441,36 @@ body.active .divider {
 .contact-form-section .h1 {
 	text-align: center;
 	margin-bottom: 30px;
+}
+
+.section-nav {
+	position: fixed;
+	top: 100px;
+	right: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	z-index: 20;
+}
+
+.section-nav a {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 1s;
+}
+
+.section-nav a.active {
+	background-color: #000;
+}
+
+@media (max-width: 1100px) {
+	.section-nav {
+		display: none;
+	}
 }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {

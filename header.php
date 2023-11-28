@@ -54,4 +54,12 @@
 				<img src="<?php echo $toLightMode ?>" class="to-light-mode" />
 			<?php	endif; ?>
 		</button>
+
+		<div class="section-nav">
+			<a href="#hero" class="active"></a>
+			<a href="#designed"></a>
+			<a href="#why"></a>
+			<a href="#process"></a>
+			<a href="#how"></a>
+		</div>
 	</header>
