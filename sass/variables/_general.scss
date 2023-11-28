@@ -203,7 +203,6 @@ body.active {
   margin-inline: auto;
   z-index: 4;
   position: relative;
-  overflow: hidden;
   text-align: center;
   display: flex;
   align-items: center;
@@ -212,7 +211,11 @@ body.active {
 
   @media (max-width: 1024px) {
     padding: 78px 32px 34px;
+    padding-inline: 0;
   }
+
+        @media (max-width: 1024px) {
+      }
 
   &__container {
     max-width: 900px;

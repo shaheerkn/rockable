@@ -239,7 +239,6 @@ body.active .divider {
 	margin-inline: auto;
 	z-index: 4;
 	position: relative;
-	overflow: hidden;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -250,6 +249,7 @@ body.active .divider {
 @media (max-width: 1024px) {
 	.contact-form {
 		padding: 78px 32px 34px;
+		padding-inline: 0;
 	}
 }
 
