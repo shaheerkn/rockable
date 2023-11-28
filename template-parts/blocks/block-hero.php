@@ -11,7 +11,7 @@
         theme_the_field( 'pre_title', '<p class="p tagline">', '</p>', true );
         theme_the_field( 'title', '<h2 class="h2 brand">', '</h2>', true );
       ?>
-      <a href="#" class="brand">
+      <a href="/" class="brand">
         <img src="<?php echo get_template_directory_uri() ?>/assets/brand-black.svg" />
       </a> 
     </div>

@@ -30,24 +30,8 @@ if (get_sub_field('enable_button') == 'Yes'){
 
     <?php if ( get_sub_field('enable_button') == 'Yes' ): ?>
       <div class="actual-position">
-        <a href="#" class="btn button--sticky open-popup"><?php echo get_sub_field( 'button_text' ); ?></a>
+        <a href="<?php echo get_sub_field( 'contact_button' )['url']; ?>" class="btn button--sticky"><?php echo get_sub_field( 'contact_button' )['title']; ?></a>
       </div>
     <?php endif;?>
   </div>
 </section>
-
-<div class="popup" aria-hidden="true">
-    <div class="popup-bg"></div>
-    <div class="contact-form">
-      <!-- form here -->
-      <div class="contact-form__close"></div>
-      <div class="contact-form__container">
-        <p class="contact-form__p">We’d love to hear about your project and how we may be a great fit. Feel free to complete the form below, shoot us an e-mail, or give us a jingle.</p>
-        <div class="contact-form__btns">
-          <a href="tel:(612) 845-0467" class="contact-form__btn btn">(612) 845-0467</a>
-          <a href="mailto:talktome@rockabledesign.com" class="contact-form__btn btn">talktome@rockabledesign.com</a>
-        </div>
-        <?php echo do_shortcode('[gravityform id="1" title="false"]'); ?>
-      </div>
-    </div>
-  </div>

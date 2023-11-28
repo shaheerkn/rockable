@@ -41,4 +41,19 @@
       }
     }
   }
+
+  &.contact-form {
+    .site-brand {
+      margin-bottom: 115px;
+
+      @media (max-width: 1440px) {
+        margin-bottom: 100px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 73px;
+      }
+    }
+  }
 }
+
