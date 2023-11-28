@@ -21,6 +21,10 @@
   .site-brand {
     margin-bottom: 190px;
 
+    img {
+      max-width: 100%;
+    }
+
     @media (max-width: 1440px) {
       margin-bottom: 100px;
     }

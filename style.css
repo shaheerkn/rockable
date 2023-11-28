@@ -1446,6 +1446,10 @@ body.active .divider {
 	margin-bottom: 190px;
 }
 
+.hero .site-brand img {
+	max-width: 100%;
+}
+
 @media (max-width: 1440px) {
 	.hero .site-brand {
 		margin-bottom: 100px;
