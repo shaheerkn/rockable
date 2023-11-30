@@ -35,10 +35,6 @@ body {
 	transition: 1s;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 .bg-el--blue {
 	opacity: 0;
 	transition: 1s;
@@ -446,7 +442,7 @@ body.active .to-light-mode {
 .section-nav {
 	position: fixed;
 	top: 100px;
-	right: 40px;
+	right: 42px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -460,16 +456,39 @@ body.active .to-light-mode {
 	border: 2px solid #000;
 	border-radius: 50%;
 	cursor: pointer;
-	transition: background-color 1s;
+	transition: background-color 1s, scale 0.3s;
 }
 
 .section-nav a.active {
 	background-color: #000;
 }
 
+.section-nav a:hover {
+	transform: scale(1.1);
+}
+
 @media (max-width: 1100px) {
 	.section-nav {
-		display: none;
+		right: auto;
+		left: 20px;
+		top: 26px;
+		padding: 5px;
+		border-radius: 10px;
+		max-height: 20px;
+		overflow: hidden;
+		transition: all 0.3s;
+	}
+	.section-nav a {
+		flex-shrink: 0;
+		pointer-events: none;
+	}
+	.section-nav.active {
+		background-color: var(--primary-color);
+		box-shadow: 0 0 5px #4f484880;
+		max-height: 165px;
+	}
+	.section-nav.active a {
+		pointer-events: all;
 	}
 }
 
