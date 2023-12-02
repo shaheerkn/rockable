@@ -84,7 +84,7 @@ if (designed || process) {
                 const targetSection = document.querySelector(targetId);
                 if (targetSection) {
                     window.scrollTo({
-                        top: targetSection.offsetTop - 200,
+                        top: targetSection.offsetTop - 130,
                         behavior: "smooth"
                     });
                     activateNavLink(this);

@@ -16,7 +16,8 @@ body {
 }
 
 html {
-  // scroll-behavior: smooth;
+  transition-duration: 2s;
+  scroll-behavior: smooth;
 }
 
 .bg-el--blue {
@@ -140,6 +141,8 @@ body.active .to-light-mode {
   }
 
   img {
+    max-width: 100%;
+    max-height: 100%;
     user-select: none;
   }
 }
