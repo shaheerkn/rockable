@@ -101,4 +101,6 @@ if (designed || process) {
             }
         });
     });
-} 
+} else {
+    sectionNav.style.display = "none"
+}
